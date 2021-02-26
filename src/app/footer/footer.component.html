@@ -1,14 +1,105 @@
-<div class="conatiner bg-primary text-white p-3">
-  <div class="row">
-    <div class="col-4">
+<div class="conatiner bg-primary text-white p-2">
+  <div class="row d-flex justify-content-center">
+    <div class="col-3">
       <h5>Talk with us</h5>
       <ul>
-        <li><a href="#!">Contact Us</a></li>
-        <li><a href="#!">Comments</a></li>
+        <li>
+          <button
+            type="button"
+            class="btn btn-primary"
+            data-toggle="modal"
+            data-target="#contact"
+          >
+            Contact Us
+          </button>
+
+          <!-- Contact Modal -->
+          <div
+            class="modal fade"
+            id="contact"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header border-bottom-0">
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                  <div class="d-flex flex-column text-center">
+                    <form>
+                      <div class="form-group">
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="name"
+                          placeholder="Type your name"
+                        />
+                      </div>
+                      <div class="form-group">
+                        <input
+                          type="email"
+                          class="form-control"
+                          id="email"
+                          placeholder="Type your cool email"
+                        />
+                      </div>
+                      <div class="form-group">
+                        <label for="" class="comment"></label>
+                        <textarea
+                          class="form-control"
+                          name
+                          id="comment"
+                          cols="10"
+                          rows="5"
+                          placeholder="Tell us, what do you need"
+                        ></textarea>
+                      </div>
+                    </form>
+
+                    <div class="d-flex justify-content-center social-buttons">
+                      <button
+                        type="button"
+                        class="btn btn-info btn-block btn-round"
+                      >
+                        Submit!
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer d-flex justify-content-center">
+                  <button
+                    type="button"
+                    class="btn btn-danger"
+                    data-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li><a href="">Comments </a></li>
         <li><a href="#!">Chat with us</a></li>
       </ul>
     </div>
-    <div class="col-4">
+    <div class="col-3">
       <h5>¿What do we do?</h5>
       <ul>
         <li><a href="#!">xxxxxx</a></li>
@@ -16,19 +107,45 @@
         <li><a href="#!">xxxxx</a></li>
       </ul>
     </div>
-    <div class="col-4">
+    <div class="col-3">
       <h5>Follow us on our social networks</h5>
 
-      <ul class="row">
-        <li class="col-3"><i class="fab fa-twitter"></i></li>
-        <li class="col-3"><i class="fab fa-instagram"></i></li>
-        <li class="col-3"><i class="fab fa-linkedin"></i></li>
+      <ul class="row text-center d-flex">
+        <div class="d-flex justify-content-center social-buttons">
+          <button
+            type="button"
+            class="btn btn-secondary btn-round"
+            data-toggle="tooltip"
+            data-placement="top"
+            title="Twitter"
+          >
+            <i class="fab fa-twitter"></i>
+          </button>
+          <button
+            type="button"
+            class="btn btn-secondary btn-round"
+            data-toggle="tooltip"
+            data-placement="top"
+            title="Facebook"
+          >
+            <i class="fab fa-facebook"></i>
+          </button>
+          <button
+            type="button"
+            class="btn btn-secondary btn-round"
+            data-toggle="tooltip"
+            data-placement="top"
+            title="Linkedin"
+          >
+            <i class="fab fa-linkedin"></i>
+          </button>
+        </div>
       </ul>
     </div>
   </div>
-  <div class="row">
-    <span class="col-2">Legal Warning</span>
-    <span class="col-2">Privacity and Cookies</span>
-    <span class="col-2">@Copyright</span>
+  <div class="row d-flex justify-content-end">
+    <span class="col-1">Legal Warning</span>
+    <span class="col-1">Privacity</span>
+    <span class="col-1">@Copyright</span>
   </div>
 </div>

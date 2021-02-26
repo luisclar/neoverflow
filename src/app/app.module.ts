@@ -10,6 +10,7 @@ import { PostComponent } from './views/post/post.component';
 import { CommentComponent } from './views/comment/comment.component';
 import { CategoriesComponent } from './views/categories/categories.component';
 import { MedalsComponent } from './views/medals/medals.component';
+import { CommentsWebComponent } from './views/comments-web/comments-web.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { MedalsComponent } from './views/medals/medals.component';
     PostComponent,
     CommentComponent,
     CategoriesComponent,
-    MedalsComponent
+    MedalsComponent,
+    CommentsWebComponent
   ],
   imports: [
     BrowserModule,
